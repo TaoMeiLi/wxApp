@@ -1,0 +1,12 @@
+<!--pages/keyboard/keyboard.wxml-->
+<view class="keyboard-page">
+  <input type="text" value="text" data-type="text" bindfocus="bindInputFocus"></input>
+  <input type="number" value="number" data-type="number" bindfocus="bindInputFocus"></input>
+  <input type="idcard" value="身份证" data-type="idcard" bindfocus="bindInputFocus"></input>
+  <input type="digit" value="带小数点数字" data-type="digit" bindfocus="bindInputFocus"></input>
+</view>
+
+<view class="comfirmbtn-modal" style="bottom:{{keyboardH}};">
+  <ComfirmBtn 
+    btnText="确认" />
+</view>

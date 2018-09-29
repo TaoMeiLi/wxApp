@@ -1,0 +1,4 @@
+<!--components/confirmBtn/confirmBtn.wxml-->
+<view class='confirmbtn-component' >
+  <view class="btn">完成</view>
+</view>

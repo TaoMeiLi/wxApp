@@ -1,0 +1,17 @@
+/* components/confirmBtn/confirmBtn.wxss */
+.confirmbtn-component {
+  width:100%;
+  height: 100rpx;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd; 
+  line-height: 100rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  overflow: hidden;
+  
+}
+.btn {
+  /* display: inline-block; */
+  float: right;
+}

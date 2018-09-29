@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="index-page">
+  <view class="items">
+    <block wx:for="{{list}}" wx:key="{{item.name}}">
+      <navigator class="item" url="{{item.url}}">
+        <text>{{item.name}}</text>
+      </navigator>
+    </block>
+  </view>
+</view>

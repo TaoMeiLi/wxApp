@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",    
+    "pages/map/map",
+    "pages/keyboard/keyboard"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FD6D42",
+    "navigationBarTitleText": "我的小程序",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default",
+    "backgroundColor": "#ddd",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 20
+  },
+  "networkTimeout": {},
+  "debug": true
+}
