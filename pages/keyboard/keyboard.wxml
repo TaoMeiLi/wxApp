@@ -1,12 +1,19 @@
 <!--pages/keyboard/keyboard.wxml-->
 <view class="keyboard-page">
-  <input type="text" value="text" data-type="text" bindfocus="bindInputFocus"></input>
-  <input type="number" value="number" data-type="number" bindfocus="bindInputFocus"></input>
-  <input type="idcard" value="身份证" data-type="idcard" bindfocus="bindInputFocus"></input>
-  <input type="digit" value="带小数点数字" data-type="digit" bindfocus="bindInputFocus"></input>
+  <block wx:for="{{data}}" wx:key="{{item.inputtype}}">
+    <input 
+      type="{{item.inputtype}}" 
+      value="" 
+      data-type="{{item.inputtype}}" 
+      placeholder="{{item.name}}" 
+      bindfocus="bindInputFocus"
+      bindblur="bindInputBlur">
+    </input>
+  </block>
 </view>
 
-<view class="comfirmbtn-modal" style="bottom:{{keyboardH}};">
+<view class="comfirmbtn-modal" style="bottom:{{keyboardH}}rpx;" wx:if="{{showKeyboard && inputType != 'text'}}">
   <ComfirmBtn 
-    btnText="确认" />
+    yesText="确认"
+    cancelText="取消" />
 </view>

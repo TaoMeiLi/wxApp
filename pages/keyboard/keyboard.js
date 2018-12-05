@@ -5,19 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
+    data: [
+      { name: 'text', inputtype: 'text'},
+      { name: '数字', inputtype: 'number'},
+      { name: '身份证', inputtype: 'idcard'},
+      { name: '带小数点数字', inputtype: 'digit'}
+    ],
     inputType: '',  // 输入框类型
-    keyboardH:0,   // 键盘高度
+    keyboardH: 0,   // 键盘高度
+    showKeyboard: false,
   },
   bindInputFocus: function(e) {
     console.log(e);
-    let keyboardH = e.detail.height,
+    let keyboardH = (e.detail.height+10)*2,
       inputType = e.currentTarget.dataset.type;
-
+    console.log(keyboardH,'键盘高度');
     app.globalData = { ...app.globalData, keyboardH: keyboardH};
 
     this.setData({
       keyboardH: keyboardH ? keyboardH : 0,
-      inputType: inputType ? inputType : ''
+      inputType: inputType ? inputType : '',
+      showKeyboard: true
+    })
+  },
+  bindInputBlur: function(e) {
+    this.setData({
+      showKeyboard: false
     })
   },
   /**

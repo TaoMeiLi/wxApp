@@ -1,5 +1,6 @@
 <!--pages/map/map.wxml-->
 <view class="map-conponent">
+  <Navigaton title="地图" isback="false"></Navigaton>
   <view class="header">定位</view>
   <view class="map-box">
     <map

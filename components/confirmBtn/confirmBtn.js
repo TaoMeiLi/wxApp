@@ -5,10 +5,15 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    btnText: {
+    yesText: {
       type: String,
       value: '完成',
-      observer: 'setBtnText'
+      observer: 'setYesBtnText'
+    },
+    cancelText: {
+      type: String,
+      value: '隐藏',
+      observer: 'setCancelBtnText'
     }
   },
 
@@ -16,16 +21,22 @@ Component({
    * 组件的初始数据
    */
   data: {
-    btnText: '完成',
+    cancelText: '',
+    yesText: '',
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    setBtnText(newVal,oldVal) {
+    setYesBtnText(newVal,oldVal) {
       this.setData({
-        btnText: newVal
+        yesText: newVal
+      })
+    },
+    setCancelBtnText(newVal,oldVal) {
+      this.setData({
+        cancelText: newVal
       })
     }
   }

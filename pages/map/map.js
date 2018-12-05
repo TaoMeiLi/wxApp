@@ -13,11 +13,11 @@ Page({
         id: 1231,  // id (number)
         latitude: 40.004033,  //纬度
         longitude: 116.393722, // 经度
-        title: '1号',     // 标注点名
+        title: '1号店',     // 标注点名
         width: 20,
         height: 20,
         callout: {
-          content:'1号>>',
+          content:'1号店>>',
           padding: 5,
           bgColor: '#fff',
           color: '#000'
@@ -32,11 +32,11 @@ Page({
         id: 1231,  // id (number)
         latitude: 40.006711,  //纬度
         longitude: 116.357746, // 经度
-        title: '2号',     // 标注点名
+        title: '2号店',     // 标注点名
         width: 20,
         height: 20,
         callout: {
-          content: '2号>>',
+          content: '2号店>>',
           padding: 5,
           bgColor: '#fff',
           color: '#000'
@@ -51,11 +51,11 @@ Page({
         id: 1232,  // id (number)
         latitude: 40.018807,  //纬度
         longitude: 116.413021, // 经度
-        title: '3号',     // 标注点名
+        title: '3号店',     // 标注点名
         width: 20,
         height: 20,
         callout: {
-          content: '3号>>',
+          content: '3号店>>',
           padding: 5,
           bgColor: '#fff',
           color: '#000'
@@ -70,11 +70,11 @@ Page({
         id: 1233,  // id (number)
         latitude: 39.980540,  //纬度
         longitude: 116.427269, // 经度
-        title: '4号',     // 标注点名
+        title: '4号店',     // 标注点名
         width: 20,
         height: 20,
         callout: {
-          content: '4号>>',
+          content: '4号店>>',
           padding: 5,
           bgColor: '#fff',
           color: '#000'
@@ -89,11 +89,11 @@ Page({
         id: 1234,  // id (number)
         latitude: 39.993430,  //纬度
         longitude: 116.386070, // 经度
-        title: '5号',     // 标注点名
+        title: '5号店',     // 标注点名
         width: 20,
         height: 20,
         callout: {
-          content: '5号>>',
+          content: '5号店>>',
           padding: 5,
           bgColor: '#fff',
           color: '#000'
@@ -120,8 +120,7 @@ Page({
   markerTap: function(e) { // 点击标记点
     console.log(e.markerId,'点击点点id')
   },
-  callOutTap: function() { // 点击标记点上的气泡
-  
+  callOutTap: function(e) { // 点击标记点上的气泡
   },
   controlTap: function() { // 点击控件时触发，返回control的id
   

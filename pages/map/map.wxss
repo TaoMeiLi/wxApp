@@ -1,4 +1,7 @@
 /* pages/map/map.wxss */
+.map-conponent {
+  padding-top: 128rpx;
+}
 .map-box {
   width: 100%;
   height: 600rpx;
